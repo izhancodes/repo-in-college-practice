@@ -1,53 +1,454 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Izhan Shaikh | Computer Science Engineering Student</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Welcome to My Website</h1>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <h2 class="logo">IZHAN SHAIKH</h2>
 
-    <p>Hello! My name is Izhan.</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science Engineering student interested in
-        programming, web development, and technology.
-    </p>
 
-    <h2>My Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>C++</li>
-        <li>Python</li>
-    </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
 
-    <h2>My Projects</h2>
-    <p>Student Skill Tracker</p>
-    <p>Ride Optimization System</p>
+            <div>
+                <p class="small-title">COMPUTER SCIENCE ENGINEERING STUDENT</p>
 
-    <h2>What I Am Learning</h2>
-    <ul>
-        
+                <h1>
+                    Hi, I'm <span>Izhan Shaikh</span>
+                </h1>
 
-        <li>C++ Programming</li>
-        <li>SQL and Databases</li>
-    </ul>
+                <p class="hero-text">
+                    First-year Computer Science Engineering student interested in
+                    Artificial Intelligence, Data Analytics and Software Development.
+                </p>
 
-    <h2>Learning Outcomes</h2>
-    <ul>
-        <li>Understand the basic structure of a website</li>
-        <li>Create web pages using HTML</li>
-        <li>Use headings, paragraphs, lists, and buttons</li>
-        <li>Understand basic web development concepts</li>
-        <li>Build simple and functional websites</li>
-    </ul>
+                <div class="buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn outline">Contact Me</a>
+                </div>
+            </div>
 
-    <h2>Contact</h2>
-    <p>Email: izhan@gmail.com</p>
+        </div>
+    </section>
 
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+
+            <h2 class="section-title">Profile</h2>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Izhan Shaikh</td>
+                </tr>
+
+                <tr>
+                    <th>Degree</th>
+                    <td>B.Tech - Computer Science Engineering</td>
+                </tr>
+
+                <tr>
+                    <th>University</th>
+                    <td>MIT Vishwaprayag University</td>
+                </tr>
+
+                <tr>
+                    <th>Location</th>
+                    <td>Solapur, Maharashtra, India</td>
+                </tr>
+
+                <tr>
+                    <th>Interests</th>
+                    <td>Artificial Intelligence, Data Analytics, Software Development</td>
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <td>izhansshaikh2311@gmail.com</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+        <div class="container">
+
+            <h2 class="section-title">Education & Marks</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institution</th>
+                        <th>Score / Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>B.Tech - Computer Science Engineering</td>
+                        <td>MIT Vishwaprayag University</td>
+                        <td>Currently Pursuing</td>
+                    </tr>
+
+                    <tr>
+                        <td>HSC - Class 12</td>
+                        <td>Maharashtra State Board</td>
+                        <td>67%</td>
+                    </tr>
+
+                    <tr>
+                        <td>SSC - Class 10</td>
+                        <td>Maharashtra State Board</td>
+                        <td>91%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Coursework -->
+    <section>
+        <div class="container">
+
+            <h2 class="section-title">Relevant Coursework</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Area</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Python Programming</td>
+                        <td>Programming</td>
+                    </tr>
+
+                    <tr>
+                        <td>Data Science</td>
+                        <td>Data Analysis</td>
+                    </tr>
+
+                    <tr>
+                        <td>Excel</td>
+                        <td>Data Analytics</td>
+                    </tr>
+
+                    <tr>
+                        <td>SQL</td>
+                        <td>Database</td>
+                    </tr>
+
+                    <tr>
+                        <td>Power BI</td>
+                        <td>Data Visualization</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+
+            <h2 class="section-title">Technical Skills</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Technologies / Skills</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Programming</td>
+                        <td>Python, C Programming</td>
+                    </tr>
+
+                    <tr>
+                        <td>Data Analytics</td>
+                        <td>Excel, Power BI, Pandas, CSV</td>
+                    </tr>
+
+                    <tr>
+                        <td>Database</td>
+                        <td>SQL - Learning</td>
+                    </tr>
+
+                    <tr>
+                        <td>Web Development</td>
+                        <td>HTML5, CSS3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tools</td>
+                        <td>Git, GitHub</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+
+            <h2 class="section-title">Projects</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Technologies</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Student Skill Tracker & Management System</td>
+
+                        <td>C</td>
+
+                        <td>
+                            A C-based system for managing student skills,
+                            placement information, achievements and reports.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ride Optimization System</td>
+
+                        <td>Python, Pandas, CSV</td>
+
+                        <td>
+                            Analyzes ride data to identify patterns and
+                            improve ride planning and optimization.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Helmet Detection System</td>
+
+                        <td>Python, YOLOv8, OpenCV</td>
+
+                        <td>
+                            A computer vision system designed to detect
+                            helmet usage for rider safety.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="container">
+
+            <h2 class="section-title">Internship Experience</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Organization</th>
+                        <th>Role</th>
+                        <th>Duration</th>
+                        <th>Work</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>intels4ai</td>
+
+                        <td>AI Intern</td>
+
+                        <td>Current</td>
+
+                        <td>
+                            Learning and working with SQL and
+                            Artificial Intelligence technologies.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Shams Energy Pvt. Ltd., Solapur</td>
+
+                        <td>Part-Time Data Analyst Intern</td>
+
+                        <td>Mar 2024 - Jul 2025</td>
+
+                        <td>
+                            Worked with operational data using Excel,
+                            basic SQL and Power BI dashboards and reports.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Achievements -->
+    <section>
+        <div class="container">
+
+            <h2 class="section-title">Achievements & Activities</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Student Council Member</td>
+                        <td>MIT Vishwaprayag University</td>
+                    </tr>
+
+                    <tr>
+                        <td>Football</td>
+                        <td>District Level Football Player</td>
+                    </tr>
+
+                    <tr>
+                        <td>Languages</td>
+                        <td>English, Hindi, Marathi</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+
+            <h2 class="section-title">Contact</h2>
+
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <a href="mailto:izhansshaikh2311@gmail.com">
+                            izhansshaikh2311@gmail.com
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>GitHub</th>
+                    <td>
+                        <a href="https://github.com/izhancodes" target="_blank">
+                            github.com/izhancodes
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>LinkedIn</th>
+                    <td>
+                        <a href="https://www.linkedin.com/in/izhan-shaikh-60560a395"
+                           target="_blank">
+                            LinkedIn Profile
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+
+                <h3>Send a Message</h3>
+
+                <form>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                              placeholder="Write your message"></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <p>
+                © 2026 Izhan Shaikh. All Rights Reserved.
+            </p>
+
+            <p>
+                Built with HTML & CSS.
+            </p>
+
+        </div>
+    </footer>
 
 </body>
 </html>
