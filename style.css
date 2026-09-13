@@ -1,0 +1,341 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Header */
+header {
+    background: #111111;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero */
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-bottom: 1px solid #dddddd;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.small-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #111111;
+}
+
+.hero-text {
+    max-width: 650px;
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #111111;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #111111;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #333333;
+}
+
+.btn.outline {
+    background: transparent;
+    color: #111111;
+}
+
+.btn.outline:hover {
+    background: #111111;
+    color: white;
+}
+
+
+/* Sections */
+section {
+    padding: 75px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #111111;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #111111;
+    margin-top: 10px;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f2f2f2;
+    font-weight: bold;
+    color: #111111;
+}
+
+td {
+    color: #444444;
+}
+
+tr:hover td {
+    background: #fafafa;
+}
+
+
+/* Links */
+a {
+    color: #111111;
+}
+
+td a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact Form */
+.contact-form {
+    margin-top: 45px;
+    max-width: 700px;
+}
+
+.contact-form h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 18px;
+    border: 1px solid #cccccc;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #111111;
+}
+
+button {
+    width: fit-content;
+    padding: 12px 25px;
+    background: #111111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #333333;
+}
+
+
+/* Footer */
+footer {
+    background: #111111;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    .nav-container {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
